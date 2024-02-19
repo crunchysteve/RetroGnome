@@ -1,14 +1,12 @@
 # Retronome
 An open source, Arduino metronome, not too dissimilar to the venerable Dr Rhythm. Please note, this project is a work in progress, it is offered publicly with no warranty, inferred or implied. See the licence for details.
 
-You know the sort of metronome, "Bleep, blip, blip, blip. Bleep, blip, blip, blip..." with a knob to change tempo. Maybe, soon, even changeable time signatures and, eventually, a MIDI Master Clock output and MIDI Start/Stop. For now, it goes, "Bleep, blip, blip, blip. Bleep, blip, blip, blip..."
-
-Here's the Wokwi simulation circuit so far...
+For now, it goes, "Bleep, blip, blip, blip. Bleep, blip, blip, blip..." Here's the Wokwi simulation circuit so far...
 
 <a href="https://wokwi.com/projects/387895335576882177" target="_blank"><img width="676" alt="Screenshot 2024-01-26 at 10 51 18 pm" src="https://github.com/crunchysteve/Retronome/assets/46626696/3d1bc020-caeb-465c-a704-16c57d75d0dc"></a>
 
 ## Project Roadmap
-Mine is going to be a guitar "squash box" with potentiometer to set tempo (between 30 BPM and 285 BPM), probably another pot to set a few different time signatures, maybe 2/4, 3/4, 4/4, 5/4 & 7/8, perhaps a 3-way switch to set half time and double time (eg 4/2 and 4/8 at 4/4 in the middle position. I'm still winging this one. It arose out of a source of insomnia last night. (Invasion Day Eve in Australia) It's been an extremely "compliant" little beast to tease to this stage, so I am happy to keep working on it. Besides, I need a metronome for when it's too much work to power up the drum machine and that's really too much like cracking a peanut with a sledgehammer.
+Mine is going to be a guitar "squash box" with potentiometer to set tempo (between 30 BPM and 285 BPM), probably another pot to set a few different time signatures, tap tempo ([using dxinteractive's library](https://github.com/dxinteractive/ArduinoTapTempo)), MIDI clock with start/stop, maybe 2/4, 3/4, 4/4, 5/4 & 7/8, perhaps a 3-way switch to set half time and double time (eg 4/2 and 4/8 at 4/4 in the middle position. I'm still winging this one. It arose out of a source of insomnia last night. (Invasion Day Eve in Australia) It's been an extremely "compliant" little beast to tease to this stage, so I am happy to keep working on it. Besides, I need a metronome for when it's too much work to power up the drum machine and that's really too much like cracking a peanut with a sledgehammer.
 
 I could buy a metronome of exactly this type for AU$16 +post, but I have a workshop full of parts and it's shaping up as fun coding exercise. It works. Right as depicted here, now, but there are a few challenges to solve. For example, since adding the pot, the bleep and its blips have gone a bit squeeky. That may be just Wokwi.com's sim engine. I've yet to run this on hardware. You need 2 libraries to build this and upload it, my EdgieD state change detector for button sensing, and the 4x 7 seg display driver, TM1637TinyDisplay. I'm tossing up the idea of a Nokia 5110 display version, too. Are they still making that spare part? Seem to be a few about on eBay and Ali.
 
