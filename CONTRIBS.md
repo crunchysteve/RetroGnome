@@ -19,5 +19,4 @@ can be agreed, and what can't, if that is a feasible option.
 
 If it contiues to stay as just li'l ol' me, so be it, but if you think you have something to contribute, don't be shy and don't be greedy, either.
 
-&hearts;,
-Crunchy.
+&hearts; Crunchy.
