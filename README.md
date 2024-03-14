@@ -14,6 +14,7 @@ I want to add some sort of animation to the display or maybe a 2 colour LED on p
 
 ## Fritzing PCB File and Gerber Folder Added
 ![PCB Image](https://github.com/crunchysteve/Retronome/blob/main/RetroGnome_pcb.png)
+
 At this stage, It hasn't been built, there may be errors. I've still to finalise code for features, such as time signature potentiometer. (The tempo pot has worked in simulation since first commit.) I promise, I'll get it to a basic release in the next few months. Clone the Gerber directory, zip it up and upload it PCBway or NextPCB, as is your preference. If you can't wait for the first release code, feel free to fork it and do it yourself. The only source restriction is on commercial use. This project is totally FOSS, see the licence for details.
 
 ## How It Works
