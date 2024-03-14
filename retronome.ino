@@ -1,13 +1,18 @@
 #include <TM1637TinyDisplay.h>        //  Include 7-seg display driver
 #include <EdgieD.h>                   //  Include Edge Detector Library
-// #include <NOKIA5110_TEXT.h>             //  Include Nokia Display Library (Maybe later)
 
 #define CLK 4                         //  define 7-seg clock pin
 #define DIO 8                         //  define 7-seg data I/O pin
 #define STTSTP 3                      //  define start/stop button
+#define SIGPIN A2                     //  Time signature pot input pin
+#define TEMPOPIN A7                   //  Tempo pot input pin
 
 int pitch  = 880;                     //  declare blip pitch for first beat
 int tempo  = 120;                     //  declare start tempo
+int timeSig  = 4;                     //  declare start timeSig
+int timeSigs[] = {2,3,4,5,7,9,11,13}; //  declare timesignatures eg 2/4, 3/4, etc.
+                                      //  halve tempo for 2/2, 3/2, 4/2, etc.
+                                      //  double tempo for 2/8, 3/8, 4/8, etc.
 int beats  =   4;                     //  declare beats
 int barLen =   4;                     //  declare bar length in beats
 int count  =   1;                     //  declare beat count variable
@@ -72,10 +77,14 @@ void loop() {
   }
 
   // read the tempo pot and set the tempo between 30 and 285 (255 steps)
-  int pot = (analogRead(A0) + 1) / 4 - 1 + 30;  // read pot value & calculate tempo
-  if(pot != tempo) tempo = pot;       //  set new tempo,
+  int tempoPot = (analogRead(TEMPOPIN) + 1) / 4 - 1 + 30;  // read pot value & calculate tempo
+  if(tempoPot != tempo) tempo = tempoPot;       //  set new tempo,
   if(tempo > 285) tempo = 285;        //  keep tempo below 285 and
   if(tempo < 30) tempo = 30;          //  keep tempo above 30
   period = 60000000 / tempo;          //  calculate beat period      uS
   blipPrd = period / 48;              //  calculate tone pulse width uS
+  //  adding code for time signature setting detection (time sig management yet to come) -
+  //  int sigPot = (analogRead(SIGPIN) + 1) / 9 - 1;  // read pot value & calculate tempo
+  //  if(sigPot != timeSig) timeSig = timeSigs[sigPot];       //  set new tempo,
+  //  -- Will enable once I figure out handling of display toggles ------------------------
 }
