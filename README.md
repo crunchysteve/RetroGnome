@@ -17,6 +17,8 @@ I want to add some sort of animation to the display or maybe a 2 colour LED on p
 
 At this stage, It hasn't been built, there may be errors. I've still to finalise code for features, such as time signature potentiometer. (The tempo pot has worked in simulation since first commit.) I promise, I'll get it to a basic release in the next few months. Clone the Gerber directory, zip it up and upload it PCBway or NextPCB, as is your preference. If you can't wait for the first release code, feel free to fork it and do it yourself. The only source restriction is on commercial use. This project is totally FOSS, see the licence for details.
 
+THE PIN NUMBERS HAVE CHANGED ON THE CIRCUIT BOARD LAYOUT, COMPARED TO THE WOKWI SIM!!! Watch out for that in the code. That's my first order of biz in the next few days.
+
 ## How It Works
 When you power it up, the display cycles through, "Wlcm to Rtro nome," as 4 lines of 7-seg text. Once that's done, it sits and does nothing, tempo set to where the knob is, waiting for you to press the start/stop button. When you do finally press the button, it goes "Bleep, blip, blip, blip. Bleep, blip, blip, blip..." until you press the button again. It works like a computer mouse, action-on-release, because of the ```INPUT_PULLUP``` config on pin 2. You kind of want this with a foot pedal metronome, press the button, focus on the piece you want to play, lift your foot and play. As you approach the end of the piece, foot on the button, release as you play the last beat.
 
