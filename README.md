@@ -12,10 +12,13 @@ I could buy a metronome of exactly this type for AU$16 +post, but I have a works
 
 I want to add some sort of animation to the display or maybe a 2 colour LED on pins 12 and 13 to flash red, green, green, green, red, green, green, green when running, too. Should I add swing capability? Yes, it will be a guitar pedal form factor. No, it's not a guitar pedal, it's a foot operated metronome. I want it next to my effects. You should work with a metronome when workshopping effects switches during practice.
 
+## Fritzing PCB File and Gerber Folder Added
+![PCB Image](https://github.com/crunchysteve/Retronome/blob/main/RetroGnome_pcb.png)
+At this stage, It hasn't been built, there may be errors. I've still to finalise code for features, such as time signature potentiometer. (The tempo pot has worked in simulation since first commit.) I promise, I'll get it to a basic release in the next few months. Clone the Gerber directory, zip it up and upload it PCBway or NextPCB, as is your preference. If you can't wait for the first release code, feel free to fork it and do it yourself. The only source restriction is on commercial use. This project is totally FOSS, see the licence for details.
+
 ## How It Works
 When you power it up, the display cycles through, "Wlcm to Rtro nome," as 4 lines of 7-seg text. Once that's done, it sits and does nothing, tempo set to where the knob is, waiting for you to press the start/stop button. When you do finally press the button, it goes "Bleep, blip, blip, blip. Bleep, blip, blip, blip..." until you press the button again. It works like a computer mouse, action-on-release, because of the ```INPUT_PULLUP``` config on pin 2. You kind of want this with a foot pedal metronome, press the button, focus on the piece you want to play, lift your foot and play. As you approach the end of the piece, foot on the button, release as you play the last beat.
 
 [You can try out the sim over here at wokwi](https://wokwi.com/projects/387895335576882177).
-
 
 Feel free to use this in it's current form, in any way you see fit, but don't mass produce it off my code without asking, OK.
