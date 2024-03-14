@@ -15,6 +15,7 @@ scale([40/200,20/100]){
         }
         translate([200,49.5]) circle(6);
         translate([5,30]) square([20,40]);
+        translate([65,7]) square([70,15]);
     }
     for(y=[33:10:63]){
         translate([9.5,y]) difference(){
@@ -22,9 +23,4 @@ scale([40/200,20/100]){
             circle(3);
         }
     }
-
-    translate([14.5,31]) text(text="GND",size=4);
-    translate([14.5,41]) text(text="VCC",size=4);
-    translate([14.5,51]) text(text="DIO",size=4);
-    translate([14.5,61]) text(text="CLK",size=4);
 }
