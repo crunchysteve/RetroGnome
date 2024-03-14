@@ -1,0 +1,32 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=RetroGnome
+*Date=23:46:26
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d32
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;220;THT;31.9244;-16.2211;90;Bottom;R2
+2;;;22.7131;-33.2911;-90;Bottom;Arduino Nano
+3;;;37.9244;-6.18111;0;Bottom;J1
+4;;;4.10342;-69.4638;-90;Bottom;4x7Seg
+5;;;18.4385;-16.8763;0;Bottom;Via3
+6;;THT;42.9324;-17.0381;0;Bottom;Output
+7;1µF;100 mil [THT, electrolytic];36.1944;-19.9111;180;Bottom;C1
+8;;;42.7956;-69.7874;0;Bottom;Hole1
+9;;;12.3952;-66.4011;0;Bottom;Via1
+10;;;22.8539;-69.8906;0;Bottom;IMG1
+11;;;10.9841;-16.881;0;Bottom;Via2
+12;;THT;2.91644;-18.0341;180;Bottom;DC 9v
+13;220;THT;25.1144;-19.9111;0;Bottom;R1
+14;;tactile-pth-12mm;22.1812;-8.16123;90;Bottom;S1
+15;;THT;7.59932;-52.9016;180;Bottom;Tempo
+16;;;23.4407;-44.6114;0;Bottom;TXT1
+17;;THT;38.2496;-52.9206;0;Bottom;Time
