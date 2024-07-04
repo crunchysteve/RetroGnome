@@ -26,4 +26,4 @@ When you power it up, the display cycles through, "Wlcm to Rtro nome," as 4 line
 
 [You can try out the sim over here at wokwi](https://wokwi.com/projects/387895335576882177).
 
-Feel free to use this in it's current form, in any way you see fit, but don't mass produce it off my code without asking, OK.
+Feel free to use this in it's current form, in any way you see fit, but don't mass produce it off my code without asking permission or being willing to pay a per unit royalty, OK. It's open source, not open slather.
